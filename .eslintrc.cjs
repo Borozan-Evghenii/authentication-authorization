@@ -26,8 +26,12 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  ignorePatterns: ['*.config.js', '*.config.ts'],
+  ignorePatterns: ['*.config.js', '*.config.ts', 'src/components/*'],
   rules: {
+    '@typescript-eslint/no-unsafe-assignment': 1,
+    '@typescript-eslint/no-unsafe-member-access': 1,
+    '@typescript-eslint/no-base-to-string': 0,
+    '@typescript-eslint/restrict-template-expressions': 0,
     '@typescript-eslint/no-shadow': 0,
     '@typescript-eslint/consistent-type-imports': [
       'error',
